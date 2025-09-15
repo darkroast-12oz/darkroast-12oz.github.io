@@ -14,28 +14,26 @@
       gtag('js', new Date());
       gtag('config', 'G-RMT5JD8RBY');
     </script>
+
+    <script>
+      // ヘッダー共通部分を外部読み込みする関数
+     function loadHeader() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(err => console.error('Header load error:', err));
+      }
+    window.onload = loadHeader;
+    </script>
   
   </head>
 
   <body>
-    <!-- ここにページのコンテンツを記述 -->
 
-    <h1>12ozの深煎りコーヒー</h1>
-      <p>
-        コーヒーが好きな意識低い系です。<br>
-        苦手なことは継続です。<br>
-        12ozは約355mlです。
-      </p>
-      
-      <nav>
-        <ul>
-          <li><a href="dailylog.html">Daily Log</a></li>
-          <li><a href="habits.html">Habits</a></li>
-          <li><a href="belongings.html">Belongings</a></li>
-          <li><a href="interests.html">Interests</a></li>
-        </ul>
-      </nav>
-
+    <div id="header-container"></div>
+    <!-- ここにページのコンテンツを記述 -->  
     <h3>2025.09.14</h3>
     <h4>☕️10:30 朝のつぶやき</h4>
       <p>おはようございます。</p>
