@@ -1,0 +1,12 @@
+---
+title: "My ホームページ"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: true
+    toc_float: true
+---
+# ようこそ
+
+RmdからHTMLに変換し、GitHubを使って公開するサンプルです。
