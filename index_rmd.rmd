@@ -7,6 +7,6 @@ output:
     toc: true
     toc_float: true
 ---
-# ようこそ
+### ようこそ
 
 RmdからHTMLに変換し、GitHubを使って公開するサンプルです。
